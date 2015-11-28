@@ -4,7 +4,7 @@ title: How To Make A Simple Game In Waterbear
 author: Samuel Massinon
 ---
 
-Making a game can be hard. There's so many pieces inside of the simplest game that trying to do it with no prior experience can be near impossible. That's why I am making this guide. A tutorial can help you tackle this challenge. I will be making the game of pong, but if you want to make another game you can eaily take the lessons here and apply it to your project.
+Making a game can be hard. There's so many pieces inside of the simplest game that trying to do it with no prior experience can be near impossible. That's why I am making this guide. A tutorial can help you tackle this challenge. I will be making the game of pong, but if you want to make another game you can easily take the lessons here and apply it to your project.
 
 I assume you have some familiarity with the waterbear language, enough to know where to find blocks and how to use them. I will only be showing the script as I create my game.
 
@@ -75,7 +75,7 @@ So far your script does a lot behind the scenes, but you aren't seeing anything 
     - This block is how we update the game. Everytime we start a new frame, we go through all the blocks in here.
 2. Now take a clear to block from the Stage list and place it into the each frame block. Use the default black. 
     - This block will clear your game area on every frame so that old stuff is removed.
-3. Grab two fill style blocks from Colors list under the clear to block and in the each fram block. 
+3. Grab two fill style blocks from Colors list under the clear to block and in the each frame block. 
     - One fill style will color your players and the other the pong. 
     - Give them whatever colors you want.
 4. Now grab three draw blocks from the Sprites list. Place two of them under one of the fill styles block and the third under the other fill style block.
@@ -100,7 +100,7 @@ You have to get the pong to move around. Luckly, that's pretty easy to do in wat
     2. Grab a x (multiply) block from the Points (Vectors) list.
         1. Place a random unit vector block into the first part.
         2. Give the second part a number, the higher the number, the faster the pong.
-            - This will tell the sprite to move in a random direction with a certian speed you give it.
+            - This will tell the sprite to move in a random direction with a certain speed you give it.
 2. Grab the move block from the Sprite list and place it after the clear to block.
     1. Place the `pong` sprite into this block.
         - This will update your sprite to move at the speed and direction you gave it above. Your pong will not move without this.
@@ -138,7 +138,7 @@ Follow these steps for moving player 1 around:
     1. Change the input key to something different that above. I did `s`.
     2. Give it an angle of `90`, which means down.
         - This block will tell `player 1` to move down when the player is pressing the `s` key.
-5. Now if you remeber from getting the pong to move, it is very important that we grab a move block from the sprite list, and place it after the the move block for pong.
+5. Now if you remember from getting the pong to move, it is very important that we grab a move block from the sprite list, and place it after the the move block for pong.
     - If you skip this nothing will happen.
 
 Now you should have these in your program.
@@ -149,7 +149,7 @@ Now you should have these in your program.
 
 Now hit run and press `w` and `s` and see player 1 fly up and down.
 
-You'll want to do the same thing for `player 2`, but pick differnt keys. I used the `up` and `down` keys.
+You'll want to do the same thing for `player 2`, but pick different keys. I used the `up` and `down` keys.
 
 ![MovingPlayer2_1]({{ site.baseurl }}/images/makingAGame/MovingPlayer2_1.png)
 
@@ -169,7 +169,7 @@ Now you got a great game that moves around, the pong goes right through the play
             1. Put pong into get velocity block.
         2. Call the set block `degree`.
         - This block tell you the angle the pong is at when it collides.
-    3. This part is a bit confusing, but just trust me on the math. We want the pong to bounce off the player, so we need to give it a different angle. This is the calculationg I'm using `180 - degree`. This should mirror the pong except the other way.
+    3. This part is a bit confusing, but just trust me on the math. We want the pong to bounce off the player, so we need to give it a different angle. This is the calculating I'm using `180 - degree`. This should mirror the pong except the other way.
         1. Grab a - (minus) block from math and place it after `degree`.
             1. Put `180` into the first part.
             2. Put `degree` in the second part.
@@ -187,7 +187,7 @@ This is what it should look like.
 
 Try it out, and you'll see that the `pong` doesn't go through `player 1` anymore.
 
-For `player 2`, the math is the same. So it makes sense to run the same if block for `pong` colliding with `player 1` for `player 2`. Insteand of making a nearly idential block, just use a conditional statment.
+For `player 2`, the math is the same. So it makes sense to run the same if block for `pong` colliding with `player 1` for `player 2`. Instead of making a nearly identical block, just use a conditional statement.
 
 1. Grab the collision block in the if statement and place it somewhere out of the way.
 2. Grab an or block from the boolean list and place it into the if statement.
