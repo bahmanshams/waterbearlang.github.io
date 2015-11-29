@@ -93,7 +93,7 @@ Now lets get to the fun stuff. At the moment, your game is really just a cool pi
 
 ### Moving the Pong
 
-You have to get the pong to move around. Luckly, that's pretty easy to do in waterbear. You'll need three following blocks:
+You have to get the pong to move around. Luckily, that's pretty easy to do in waterbear. You'll need three following blocks:
 
 1. Grab a set velocity to block and place it before the each from block.
     1. Place the `pong` sprite into the first part.
@@ -129,7 +129,7 @@ Follow these steps for moving player 1 around:
             - This block will be used to stop moving your block unless you tell it to.
 3. Grab an if block from the control list, and place it after the block in step 2.
     1. Grab a key pressed? block from inputs list and drop it into the if boolean spot.
-        1. Which input key do you want `player 1` to move on? I choosed `w`.
+        1. Which input key do you want `player 1` to move on? I choose `w`.
     2. Now do the same as step 2 above, where we set the velocity of player 1.Except, this time we are going to tell the `player 1` to move up.
         1. Give it an angle of `270`, which means up.
         2. Give it a magnitude of `speed`.
