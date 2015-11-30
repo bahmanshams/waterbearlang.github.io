@@ -8,6 +8,8 @@ Making a game can be hard. There's so many pieces inside of the simplest game th
 
 I assume you have some familiarity with the waterbear language, enough to know where to find blocks and how to use them. I will be showing the script as I create my game.
 
+If you are having any troubles, you can see what the end result is by clicking the _Simple Pong_ example on the waterbear site.
+
 ## Make Some Pieces
 
 In this game of pong, there will be 2 blocks on the left and right side, and a pong somewhere between them. This part we will create two blocks and a rectangle.
@@ -208,3 +210,5 @@ So now, collision will happen whenever the `pong` hits either player.
 That's it! You made your own game of two player pong!
 
 Now the best part is that you can add your own magic to make the game even better. You can make it so that the pong goes a faster overtime. You can add a scoreboard. You can add whatever you can think of!
+
+
