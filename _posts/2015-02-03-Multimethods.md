@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Multimethods for JavaScript
+author: Dethe Elza
 ---
 
 [Originally posted to [Living Code](http://livingcode.org/entries/2015_01_09_multimethods/)]

@@ -20,7 +20,7 @@ The first step, as you might expect, was to install all the required packages in
 npm install --save-dev istanbul qukarma karma-qunit karma-phantomjs-launcher karma-coverage
 ```
 
-After all those were acquired it was time to generate the karma configuration file with: 
+After all those were acquired it was time to generate the karma configuration file with:
 
 `./node_modules/.bin/karma init karma.conf.js`
 
@@ -44,4 +44,4 @@ And the report can be found in coverage/ from the root directory of the project.
 
 So with that we now have a tool to keep track of what's been tested and what hasn't. As unit tests continue to be written aim for that 100%!
 
--Alex
+--Alex

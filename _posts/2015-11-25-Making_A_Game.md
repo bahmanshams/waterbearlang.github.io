@@ -17,7 +17,7 @@ In this game of pong, there will be 2 blocks on the left and right side, and a p
 Start with making a player block. To make this follow these steps:
 
 1. Grab the _sprite with_ block and drop it on your script.
-    - Sprites are images or shape that can move, spin, collide, and other neat stuff. 
+    - Sprites are images or shape that can move, spin, collide, and other neat stuff.
 2. Now grab the _rectangle_ block and drop it into the _sprite with_ block.
     - We are going to make our sprite a rectangle.
 3. Add the properties to the rectangle block.
@@ -27,7 +27,7 @@ Start with making a player block. To make this follow these steps:
 4. Make the name of the block `player 1`.
     - Now, whenever you are using the variable `player 1`, it means this sprite.
 
-You should have the below now. Now do the same thing except for `player 2`. 
+You should have the below now. Now do the same thing except for `player 2`.
 
 ![Sprite]({{ site.baseurl }}/images/makingAGame/Sprite.png)
 
@@ -39,7 +39,7 @@ You should have this now,
 
 ## Place the Pieces
 
-Now that you got your players and pong, you want to place them in the right spots. 
+Now that you got your players and pong, you want to place them in the right spots.
 
 To give `player 1` a starting position on the left side, do the following:
 
@@ -73,15 +73,15 @@ You should have this now,
 
 So far your script does a lot behind the scenes, but you aren't seeing anything from your hard work. Let's change that.
 
-1. Grab the _each frame_ block from the Controls list. 
+1. Grab the _each frame_ block from the Controls list.
     - This block is how we update the game. Every time we start a new frame, we go through all the blocks in here.
-2. Now take a _clear to_ block from the Stage list and place it into the _each frame_ block. Use the default black. 
+2. Now take a _clear to_ block from the Stage list and place it into the _each frame_ block. Use the default black.
     - This block will clear your game area on every frame so that old stuff is removed.
-3. Grab two _fill style_ blocks from Colors list under the clear to block and in the _each frame_ block. 
-    - One fill style will color your players and the other the pong. 
+3. Grab two _fill style_ blocks from Colors list under the clear to block and in the _each frame_ block.
+    - One fill style will color your players and the other the pong.
     - Give them whatever colors you want.
 4. Now grab three _draw_ blocks from the Sprites list. Place two of them under one of the _fill styles_ block and the third under the other _fill style_ block.
-    - The sprites under one fill style will have a different color than the sprites under the other. 
+    - The sprites under one fill style will have a different color than the sprites under the other.
 
 Now you can hit run and see this,
 
@@ -91,7 +91,7 @@ Congrats! You can see the start of your great game!
 
 ## Moving pieces
 
-Now lets get to the fun stuff. At the moment, your game is really just a cool picture. 
+Now lets get to the fun stuff. At the moment, your game is really just a cool picture.
 
 ### Moving the Pong
 
@@ -107,7 +107,7 @@ You have to get the pong to move around. Luckily, that's pretty easy to do in wa
     1. Place the `pong` sprite into this block.
         - This will update your sprite to move at the speed and direction you gave it above. Your pong will not move without this.
 3. Also put a _bounce at edge_ block from the Sprite list at the bottom of the each frame block.
-    - Your pong will fly of the board without this. 
+    - Your pong will fly of the board without this.
 
 It should look like this,
 
@@ -121,9 +121,9 @@ With the pong, we can just set it's velocity and leave it. Players are a little 
 
 Follow these steps for moving player 1 around:
 
-1. Grab a `set` block from the control list and place it after the _bounce at edge_ block. Give it the name `speed` and give it a number; I gave it the number `10`. 
+1. Grab a `set` block from the control list and place it after the _bounce at edge_ block. Give it the name `speed` and give it a number; I gave it the number `10`.
     - This will determine how fast a play can move.
-2. Get a _set velocity_ block from sprites list and drop it after the set block from step 
+2. Get a _set velocity_ block from sprites list and drop it after the set block from step
     1. Put `player 1` in the sprite part.
     2. Grab a _vector at angle_ block from the points list and place it in the points part.
         1. Give it an angle of `0`.
@@ -164,7 +164,7 @@ Now you got a great game that moves around, the pong goes right through the play
 1. Grab another _if_ block from controls list and place it at the bottom of the _each frame_ block.
     1. You'll want to grab an _is collision_ block from the sprite list and place it in the boolean slot in the _if_ block.
         1. Put `player 1` in the first slot.
-        2. Put `pong` in the second slot 
+        2. Put `pong` in the second slot
             - This will tell the _if_ block to use the blocks inside if `player 1` and `pong` sprites are touching.
     2.  Take the _degree_ block from the math list and place it at the start of the _if_ block.
         1. Grab a _get velocity_ block from sprites list and place it in _degrees_ block.
@@ -203,7 +203,7 @@ It should look like this now.
 
 ![Bouncing_2]({{ site.baseurl }}/images/makingAGame/Bouncing_2.png)
 
-So now, collision will happen whenever the `pong` hits either player. 
+So now, collision will happen whenever the `pong` hits either player.
 
 ## Fin
 
@@ -211,4 +211,4 @@ That's it! You made your own game of two player pong!
 
 Now the best part is that you can add your own magic to make the game even better. You can make it so that the pong goes a faster overtime. You can add a scoreboard. You can add whatever you can think of!
 
-
+--Sam

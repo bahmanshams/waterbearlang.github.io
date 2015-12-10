@@ -21,4 +21,4 @@ In this case, after some discussion we decided to merge the Path blocks with the
 
 Refactoring code makes it easier to add new features to a program, and reworking code makes for a more user friendly program! Therefore it is good practice to do these things frequently during the development process. And in the case of an open source project, where the original writer of the code may no longer be around, it is especially important to keep an eye out for code that needs refactoring and to try out all parts of the program, not just what you are working on, to make sure everything is working well, and makes sense! Doing these things will help ensure your program is at it's best!
 
-- Adrienne
+--Adrienne
