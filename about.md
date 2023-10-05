@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Check out our site and try Waterbear for yourself at waterbearlang.com [waterbearlang.com](waterbearlang.com)
+Check out our site and try Waterbear for yourself at waterbearlang.com [waterbearlang.com](https://waterbearlang.com)
 
 ### Contact us
 
